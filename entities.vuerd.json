@@ -1,0 +1,175 @@
+{
+    "canvas": {
+      "version": "2.2.11",
+      "width": 2000,
+      "height": 2000,
+      "scrollTop": -5.833333101537503,
+      "scrollLeft": 0,
+      "zoomLevel": 1,
+      "show": {
+        "tableComment": true,
+        "columnComment": true,
+        "columnDataType": true,
+        "columnDefault": true,
+        "columnAutoIncrement": false,
+        "columnPrimaryKey": true,
+        "columnUnique": false,
+        "columnNotNull": true,
+        "relationship": true
+      },
+      "database": "MySQL",
+      "databaseName": "",
+      "canvasType": "ERD",
+      "language": "GraphQL",
+      "tableCase": "pascalCase",
+      "columnCase": "camelCase",
+      "highlightTheme": "VS2015",
+      "bracketType": "none",
+      "setting": {
+        "relationshipDataTypeSync": true,
+        "relationshipOptimization": false,
+        "columnOrder": [
+          "columnName",
+          "columnDataType",
+          "columnNotNull",
+          "columnUnique",
+          "columnAutoIncrement",
+          "columnDefault",
+          "columnComment"
+        ]
+      },
+      "pluginSerializationMap": {}
+    },
+    "table": {
+      "tables": [
+        {
+          "name": "nearplaces_users",
+          "comment": "",
+          "columns": [],
+          "ui": {
+            "active": false,
+            "left": 82.5001,
+            "top": 61.6668,
+            "zIndex": 139,
+            "widthName": 104.6162109375,
+            "widthComment": 60
+          },
+          "visible": true,
+          "id": "24596aec-c9aa-401b-bd96-1426a0e4bf78"
+        },
+        {
+          "name": "nearplaces_events",
+          "comment": "",
+          "columns": [],
+          "ui": {
+            "active": false,
+            "left": 85.0002,
+            "top": 161.6677,
+            "zIndex": 140,
+            "widthName": 111.12890625,
+            "widthComment": 60,
+            "color": "#FF00001E"
+          },
+          "visible": true,
+          "id": "ca2bb88a-0bd5-4264-b839-ef39c0c7a5d1"
+        },
+        {
+          "name": "nearplaces_locations",
+          "comment": "",
+          "columns": [],
+          "ui": {
+            "active": false,
+            "left": 474.1664,
+            "top": 160.8339,
+            "zIndex": 147,
+            "widthName": 124.13525390625,
+            "widthComment": 60
+          },
+          "visible": true,
+          "id": "c7b63460-bc06-4131-b430-4c9b1918ce23"
+        },
+        {
+          "name": "nearplaces_categories",
+          "comment": "",
+          "columns": [],
+          "ui": {
+            "active": false,
+            "left": 471.6664,
+            "top": 60.0006,
+            "zIndex": 146,
+            "widthName": 132.80615234375,
+            "widthComment": 60
+          },
+          "visible": true,
+          "id": "d70b22c9-837a-40cd-a2c1-ad904ec18446"
+        },
+        {
+          "name": "nearplaces_events_favorites",
+          "comment": "",
+          "columns": [],
+          "ui": {
+            "active": false,
+            "left": 473.3332,
+            "top": 258.3336,
+            "zIndex": 148,
+            "widthName": 167.48974609375,
+            "widthComment": 60
+          },
+          "visible": true,
+          "id": "4a72d9fc-fac4-49cd-8899-7953336f4f6f"
+        },
+        {
+          "name": "nearplaces_events_notifications",
+          "comment": "",
+          "columns": [],
+          "ui": {
+            "active": false,
+            "left": 472.5003,
+            "top": 357.5005,
+            "zIndex": 149,
+            "widthName": 187.0087890625,
+            "widthComment": 60
+          },
+          "visible": true,
+          "id": "7152e9f4-09ab-4d41-9ab2-48d2a7760982"
+        },
+        {
+          "name": "nearplaces_groups",
+          "comment": "",
+          "columns": [],
+          "ui": {
+            "active": false,
+            "left": 85.0001,
+            "top": 257.5009,
+            "zIndex": 141,
+            "widthName": 112.576171875,
+            "widthComment": 60
+          },
+          "visible": true,
+          "id": "7a71bd26-c28c-47cb-bc09-e85553a39a39"
+        },
+        {
+          "name": "nearplaces_feedbacks",
+          "comment": "",
+          "columns": [],
+          "ui": {
+            "active": false,
+            "left": 86.6668,
+            "top": 353.3334,
+            "zIndex": 143,
+            "widthName": 132.0888671875,
+            "widthComment": 60
+          },
+          "visible": true,
+          "id": "177f8cc9-82b5-498f-abad-2981e5201f4b"
+        }
+      ],
+      "indexes": []
+    },
+    "memo": {
+      "memos": []
+    },
+    "relationship": {
+      "relationships": []
+    }
+  }
