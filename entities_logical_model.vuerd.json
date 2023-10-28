@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -829.1666829917182,
-    "scrollLeft": -285.01043537590084,
-    "zoomLevel": 0.8,
+    "scrollTop": -492.50002970298124,
+    "scrollLeft": -1062.4999915560095,
+    "zoomLevel": 1,
     "show": {
       "tableComment": true,
       "columnComment": false,
@@ -170,7 +170,7 @@
               "autoIncrement": false,
               "primaryKey": false,
               "unique": false,
-              "notNull": true
+              "notNull": false
             },
             "ui": {
               "active": false,
@@ -189,7 +189,7 @@
           "active": false,
           "left": 911.4471987319422,
           "top": 1007.1308223114115,
-          "zIndex": 12,
+          "zIndex": 21,
           "widthName": 60,
           "widthComment": 60,
           "color": "#FF5722"
@@ -413,7 +413,7 @@
           "active": false,
           "left": 1128.6129,
           "top": 1247.4046,
-          "zIndex": 10,
+          "zIndex": 9,
           "widthName": 60,
           "widthComment": 60,
           "color": "#795548"
@@ -545,7 +545,7 @@
           "active": false,
           "left": 942.1461,
           "top": 1581.4641,
-          "zIndex": 9,
+          "zIndex": 8,
           "widthName": 60,
           "widthComment": 60,
           "color": "#F44336"
@@ -608,7 +608,7 @@
           "active": false,
           "left": 1469.0363,
           "top": 1373.7106,
-          "zIndex": 11,
+          "zIndex": 10,
           "widthName": 61.97900390625,
           "widthComment": 60,
           "color": "#E91E63"
@@ -671,7 +671,7 @@
           "active": false,
           "left": 1299.3258,
           "top": 1034.817,
-          "zIndex": 17,
+          "zIndex": 16,
           "widthName": 60,
           "widthComment": 60,
           "color": "#8BC34A"
@@ -757,7 +757,7 @@
           "active": false,
           "left": 779.9981,
           "top": 771.2367,
-          "zIndex": 16,
+          "zIndex": 15,
           "widthName": 70.64990234375,
           "widthComment": 60,
           "color": "#9E9E9E"
@@ -841,9 +841,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 478.0668,
-          "top": 745.6734,
-          "zIndex": 15,
+          "left": 423.0671,
+          "top": 745.6732,
+          "zIndex": 18,
           "widthName": 60,
           "widthComment": 60,
           "color": "#FF9800"
@@ -906,7 +906,7 @@
           "active": false,
           "left": 685.339,
           "top": 1275.9481,
-          "zIndex": 8,
+          "zIndex": 7,
           "widthName": 86.55078125,
           "widthComment": 95.93896484375,
           "color": "#03A9F4"
@@ -1075,10 +1075,10 @@
           }
         ],
         "ui": {
-          "active": true,
+          "active": false,
           "left": 296.2022,
           "top": 1258.1501,
-          "zIndex": 18,
+          "zIndex": 17,
           "widthName": 61.26171875,
           "widthComment": 120,
           "color": "#03A9F4"
@@ -1141,7 +1141,7 @@
           "active": false,
           "left": 1239.7022,
           "top": 634.2339,
-          "zIndex": 13,
+          "zIndex": 24,
           "widthName": 70.64990234375,
           "widthComment": 60,
           "color": "#673AB7"
@@ -1204,7 +1204,7 @@
           "active": false,
           "left": 1199.0992,
           "top": 845.8358,
-          "zIndex": 14,
+          "zIndex": 13,
           "widthName": 103.1689453125,
           "widthComment": 60,
           "color": "#673AB7"
@@ -1273,9 +1273,9 @@
         "value": "Se usa la tabla intermediaria de prefers para poder obtener todas las preferencias",
         "ui": {
           "active": false,
-          "left": 1448.4363230187223,
-          "top": 755.3703936014604,
-          "zIndex": 3,
+          "left": 1465.1029890231152,
+          "top": 752.8703937008013,
+          "zIndex": 19,
           "width": 127,
           "height": 100,
           "color": "#673AB7"
@@ -1341,7 +1341,7 @@
       {
         "identification": false,
         "relationshipType": "OneN",
-        "startRelationshipType": "Dash",
+        "startRelationshipType": "Ring",
         "start": {
           "tableId": "7152e9f4-09ab-4d41-9ab2-48d2a7760982",
           "columnIds": [
@@ -1503,8 +1503,8 @@
           "columnIds": [
             "5a325865-04c4-4afb-be44-f93d5fd6fe9a"
           ],
-          "x": 596.8485382812501,
-          "y": 876.1734,
+          "x": 541.84883828125,
+          "y": 876.1732,
           "direction": "bottom"
         },
         "end": {
