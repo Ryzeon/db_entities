@@ -1,3 +1,7 @@
+CREATE DATABASE nearplaces;
+
+USE nearplaces;
+
 CREATE TABLE categories
 (
     id   int         NOT NULL,
