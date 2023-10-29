@@ -1,6 +1,8 @@
 CREATE DATABASE nearplaces;
+GO
 
 USE nearplaces;
+GO
 
 CREATE TABLE categories
 (
@@ -8,6 +10,7 @@ CREATE TABLE categories
     name varchar(50) NOT NULL,
     PRIMARY KEY (id)
 );
+GO
 
 CREATE TABLE events
 (
@@ -22,6 +25,7 @@ CREATE TABLE events
     ticket_link varchar(100)  NOT NULL,
     PRIMARY KEY (id)
 );
+GO
 
 CREATE TABLE favorites
 (
@@ -29,6 +33,7 @@ CREATE TABLE favorites
     event_id int NOT NULL,
     PRIMARY KEY (user_id, event_id)
 );
+GO
 
 CREATE TABLE feedbacks
 (
@@ -39,6 +44,7 @@ CREATE TABLE feedbacks
     issue_date DATE,
     PRIMARY KEY (user_id, event_id)
 );
+GO
 
 CREATE TABLE groups
 (
@@ -47,6 +53,7 @@ CREATE TABLE groups
     description     varchar(max),
     PRIMARY KEY (id)
 );
+GO
 
 CREATE TABLE locations
 (
@@ -57,6 +64,7 @@ CREATE TABLE locations
     region        varchar(30)  NOT NULL,
     PRIMARY KEY (id)
 );
+GO
 
 CREATE TABLE notifications
 (
@@ -65,6 +73,7 @@ CREATE TABLE notifications
     state bit         NOT NULL,
     PRIMARY KEY (id)
 );
+GO
 
 CREATE TABLE preferences
 (
@@ -72,6 +81,7 @@ CREATE TABLE preferences
     name varchar(100) NOT NULL,
     PRIMARY KEY (id)
 );
+GO
 
 CREATE TABLE user_feebacks
 (
@@ -79,6 +89,7 @@ CREATE TABLE user_feebacks
     event_id int NOT NULL,
     PRIMARY KEY (user_id, event_id)
 );
+GO
 
 CREATE TABLE user_preferences
 (
@@ -86,6 +97,7 @@ CREATE TABLE user_preferences
     preference_id int NOT NULL,
     PRIMARY KEY (user_id, preference_id)
 );
+GO
 
 CREATE TABLE users
 (
@@ -97,6 +109,7 @@ CREATE TABLE users
     notification_id int         NOT NULL,
     PRIMARY KEY (id)
 );
+GO
 
 CREATE TABLE users_groups
 (
@@ -104,58 +117,70 @@ CREATE TABLE users_groups
     group_id int NOT NULL,
     PRIMARY KEY (user_id, group_id)
 );
+GO
 
 ALTER TABLE events
     ADD CONSTRAINT FK_locations_TO_events
         FOREIGN KEY (location_id)
             REFERENCES locations (id);
+GO
 
 ALTER TABLE events
     ADD CONSTRAINT FK_categories_TO_events
         FOREIGN KEY (category_id)
             REFERENCES categories (id);
+GO
 
 ALTER TABLE users
     ADD CONSTRAINT FK_notifications_TO_users
         FOREIGN KEY (notification_id)
             REFERENCES notifications (id);
+GO
 
 ALTER TABLE favorites
     ADD CONSTRAINT FK_users_TO_favorites
         FOREIGN KEY (user_id)
             REFERENCES users (id);
+GO
 
 ALTER TABLE favorites
     ADD CONSTRAINT FK_events_TO_favorites
         FOREIGN KEY (event_id)
             REFERENCES events (id);
+GO
           
 ALTER TABLE user_feebacks
     ADD CONSTRAINT FK_users_TO_user_feedbacks
         FOREIGN KEY (user_id)
             REFERENCES users (id);
+GO
 
 ALTER TABLE user_feebacks
     ADD CONSTRAINT FK_events_TO_user_feedbacks
         FOREIGN KEY (event_id)
             REFERENCES events (id);
+GO
 
 ALTER TABLE users_groups
     ADD CONSTRAINT FK_users_TO_users_groups
         FOREIGN KEY (user_id)
             REFERENCES users (id);
+GO
 
 ALTER TABLE users_groups
     ADD CONSTRAINT FK_groups_TO_users_groups
         FOREIGN KEY (group_id)
             REFERENCES groups (id);
+GO
 
 ALTER TABLE user_preferences
     ADD CONSTRAINT FK_users_TO_user_preferences
         FOREIGN KEY (user_id)
             REFERENCES users (id);
+GO
 
 ALTER TABLE user_preferences
     ADD CONSTRAINT FK_preferences_TO_user_preferences
         FOREIGN KEY (preference_id)
             REFERENCES preferences (id);
+GO
