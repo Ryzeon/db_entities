@@ -43,7 +43,7 @@ db.createCollection("notifications", {
                     description: "El id debe ser un int y es requerido"
                 },
                 state: {
-                    bsonType: "bool",
+                    bsonType: "int",
                     description: "El estado debe ser un booleano y es requerido"
                 },
                 type: {
@@ -97,7 +97,7 @@ db.createCollection("event", {
                     description: "El id de la categoría debe ser un int y es requerido"
                 },
                 cost: {
-                    bsonType: "double",
+                    bsonType: "int",
                     description: "El costo debe ser un double y es requerido"
                 },
                 id: {
